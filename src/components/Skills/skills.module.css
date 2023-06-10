@@ -1,0 +1,40 @@
+.Skills img{
+  width: 5vw;
+  height: 5vw;
+  background-color: white;
+  border-radius: 0.5vw;
+  margin: 1vw;
+  padding: 0.1vw;
+  transition: width 0.5s;
+
+}
+
+.Skills img:hover{
+  width: 7vw;
+  height: 7vw;
+  animation: colorChange 0.8s infinite alternate;
+  transition: width 0.5s;
+
+}
+
+
+@keyframes colorChange {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+
+.Skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2vw;
+  border-bottom: 0.5vw dashed blue;
+}

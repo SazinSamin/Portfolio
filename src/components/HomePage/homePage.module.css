@@ -1,0 +1,12 @@
+.Introduction{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10vw;
+  padding-bottom: 7vw;
+  border-bottom: 0.5vw dashed blue;
+}
+
+.Name{
+  width: 30vw;
+  height: 10vw;
+}

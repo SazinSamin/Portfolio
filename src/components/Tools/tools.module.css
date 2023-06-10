@@ -1,0 +1,41 @@
+.Tools img{
+  width: 5vw;
+  height: 5vw;
+  background-color: white;
+  border-radius: 0.5vw;
+  margin: 1vw;
+  padding: 0.1vw;
+  transition: width 1s;
+
+}
+
+
+@keyframes colorChange {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+
+.Tools img:hover{
+  width: 7vw;
+  height: 7vw;
+  transition: width 1s;
+  animation: colorChange 0.8s infinite alternate;
+
+}
+
+.Tools{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2vw;
+  border-bottom: 0.5vw dashed blue;
+}
+

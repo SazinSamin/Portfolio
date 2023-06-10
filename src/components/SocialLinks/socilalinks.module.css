@@ -1,0 +1,33 @@
+.SocialLinks img {
+  height: 5vw;
+  width: 5vw;
+  background-color: white;
+  border-radius: 5vw;
+  margin-right: 1vw;
+  transition: width 0.5s;
+  
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+
+
+.SocialLinks img:hover{
+  font-size: 5vw;
+  background-color: rgb(72, 72, 160);
+  height: 7vw;
+  width: 7vw;
+  transition: width 0.5s;
+  animation: colorChange 5s infinite alternate;
+
+}
