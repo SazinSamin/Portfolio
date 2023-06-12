@@ -1,6 +1,21 @@
 .Education{
   border-bottom: 0.5vw dashed blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.EducationBox{
+  background-color: rgba(5, 5, 35, 0.3);
+  box-shadow: 0.1vw 0.1vw 2vw 0.3vw rgb(40, 40, 177);
+  border-radius: 2vw;
+  margin: 3vw;
+  margin-top: 2vw;
+  width: 40vw;
+  font-size: 1.5vw;
+}
+
 
 .Univeristy{
   color: orangered;
