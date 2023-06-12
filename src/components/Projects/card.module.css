@@ -5,6 +5,8 @@
   margin: 2vw;
   box-shadow: 0.1vw 0.1vw 2vw 0.3vw rgb(40, 40, 177);
   border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .Card img {
@@ -13,3 +15,12 @@
   border-radius: 2vw;
 
 }
+/*
+.Card button {
+  height: 3vw;
+  width: 10vw;
+}
+
+.Card a {
+  text-decoration: none;
+}*/

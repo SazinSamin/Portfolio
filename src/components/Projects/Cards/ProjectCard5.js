@@ -1,4 +1,5 @@
 import img from "../../../img/stroke.png"
+import MyButton from "../../Buttons/Button";
 import style from "../card.module.css";
 
 const ProjectCard5 = () => {
@@ -6,11 +7,7 @@ const ProjectCard5 = () => {
     <div className={style.Card}>
       <img src={img}></img>
       <h3>Stroke prediction using Machine learning</h3>
-      <button>
-        <a href="https://example.com" class="button">
-          Click me
-        </a>
-      </button>
+      <MyButton link="https://www.kaggle.com/code/sazinsamin/brain-stoke-prediction" text="Link"/>
     </div>
   );
 };

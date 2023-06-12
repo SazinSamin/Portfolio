@@ -1,4 +1,5 @@
 import img from "../../../img/notepad.png"
+import MyButton from "../../Buttons/Button";
 import style from "../card.module.css";
 
 const ProjectCard4 = () => {
@@ -6,11 +7,7 @@ const ProjectCard4 = () => {
     <div className={style.Card}>
       <img src={img}></img>
       <h3>NotePad</h3>
-      <button>
-        <a href="https://example.com" class="button">
-          Click me
-        </a>
-      </button>
+      <MyButton link="https://github.com/SazinSamin/NotePad" text="Link"/>
     </div>
   );
 };

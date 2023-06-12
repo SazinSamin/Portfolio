@@ -1,0 +1,29 @@
+
+.MyButton{
+  
+}
+
+.MyButton a {
+  text-decoration: none;
+  
+}
+
+.MyButton button {
+  background-color: blue;
+  color: white;
+  height: 2vw;
+  width: 10vw;
+  border-radius: 0.5vw;
+  border: none;
+  margin: 0.5vw;
+  transition: width 0.5s;
+
+}
+
+.MyButton button:hover{
+  background-color: white;
+  transition: width 0.5s;
+  color: blue;
+  height: 2.1vw;
+  width: 15vw;
+}

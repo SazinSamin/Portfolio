@@ -1,3 +1,4 @@
+import MyButton from "../Buttons/Button";
 import style from "./contactMeBox.module.css";
 import { Button } from "react-bootstrap";
 
@@ -17,7 +18,7 @@ const ContactMeBox = () => {
       <label>Text: </label>
       <input className={style.Text} placeholder="Put your Text plase"></input>
     </div>
-    <Button variant="primary">Submit</Button>{' '}
+    <MyButton link="" text="Submit"/>
   </div>
 }
 

@@ -1,4 +1,5 @@
 import img from "../../../img/autosentiment.png"
+import MyButton from "../../Buttons/Button";
 import style from "../card.module.css";
 
 const ProjectCard6 = () => {
@@ -6,11 +7,7 @@ const ProjectCard6 = () => {
     <div className={style.Card}>
       <img src={img}></img>
       <h3>Autosentiment</h3>
-      <button>
-        <a href="https://example.com" class="button">
-          Click me
-        </a>
-      </button>
+      <MyButton link="https://pypi.org/project/autosentiment/" text="Link"/>
     </div>
   );
 };
