@@ -6,6 +6,7 @@
   margin: 1vw;
   padding: 0.1vw;
   transition: width 0.5s;
+  box-shadow: 0.1vw 0.1vw 2vw 0.3vw rgb(40, 40, 177);
 
 }
 

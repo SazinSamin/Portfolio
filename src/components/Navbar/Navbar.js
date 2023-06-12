@@ -1,3 +1,4 @@
+import SearchBar from "../SearchBar/SearchBar";
 import style from "./navbar.module.css";
 
 const NavBar = () => {
@@ -5,11 +6,12 @@ const NavBar = () => {
 
 
   return <div className={style.Navbar}>
-      <li>Home</li>
+      <SearchBar />
+      <li>About me</li>
       <li>Skills</li>
       <li>Education</li>
       <li>Projects</li>
-      <li>About me</li>
+      <li>Contact</li>
   </div>
 }
 

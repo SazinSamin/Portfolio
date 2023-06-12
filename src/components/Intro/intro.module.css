@@ -1,5 +1,6 @@
 .Name{
   width: 350vw;
+  margin: 2vw;
 }
 
 .Name h3{
@@ -8,4 +9,5 @@
 
 .Name h1{
   font-size: 4vw;
+  
 }

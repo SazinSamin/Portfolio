@@ -2,15 +2,16 @@
   background-color: rgba(16, 8, 71, 0.2);
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content:space-around;
   font-size: 1.7vw;
-  box-shadow: 10px 10px 50px 10px rgb(40, 40, 177);
+  box-shadow: 0.1vw 0.1vw 2vw 0.3vw rgb(40, 40, 177);
   margin: 0px;
   border: 0px;
   padding: 1vw;
   border-radius: 1vw;
   padding-right: 5vw;
-  
+  position: fixed;
+  width: 94%;
 }
 
 .Navbar li{
@@ -21,3 +22,5 @@
 .Navbar li:hover{
   color: yellow;
 }
+
+

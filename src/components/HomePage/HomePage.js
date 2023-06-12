@@ -3,14 +3,16 @@ import Background from "../Background/Background";
 import Education from "../Education/Eduction";
 import Intro from "../Intro/Intro";
 import NavBar from "../Navbar/Navbar";
-import Project from "../Project/Project";
 import Skill from "../Skills/Skills";
 import Tools from "../Tools/Tools";
 import style from "./homePage.module.css"
+import Contact from "../Contact/Contact";
+import Projects from "../Projects/Projects";
+
 
 const HomePage = () => {
   return (
-    <div>
+    <div className={style.HomePage}>
       <Background />
       <NavBar />
       <div className={style.Introduction}>
@@ -27,7 +29,10 @@ const HomePage = () => {
         <Education />
       </div>
       <div>
-        <Project />
+        <Projects />
+      </div>
+      <div>
+        <Contact />
       </div>
     </div>
   );

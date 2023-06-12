@@ -1,0 +1,21 @@
+.ContactMeBox{
+  background-color: rgba(5, 5, 35, 0.3);
+  box-shadow: 0.1vw 0.1vw 2vw 0.3vw rgb(40, 40, 177);
+  width: 40vw;
+  border-radius: 2vw;
+  margin-top: 3vw;
+}
+
+.ContactMeBox label{
+  padding: 1vw;
+}
+
+.ContactMeBox input{
+  margin: 1vw;
+  border-radius: 1vw;
+  padding: 0.5vw;
+}
+
+.Text {
+  height: 5vw;
+}

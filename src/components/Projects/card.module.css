@@ -1,0 +1,15 @@
+.Card {
+  background-color: rgba(16, 8, 71, 0.2);
+  height: 30vw;
+  width: 35vw;
+  margin: 2vw;
+  box-shadow: 0.1vw 0.1vw 2vw 0.3vw rgb(40, 40, 177);
+  border-radius: 2vw;
+}
+
+.Card img {
+  height: 20vw;
+  width: 35vw;
+  border-radius: 2vw;
+
+}

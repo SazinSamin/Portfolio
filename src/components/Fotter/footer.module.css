@@ -1,0 +1,9 @@
+.Footer{
+}
+
+.footerText {
+  margin: 5vw;
+  background-color: rgb(40, 18, 149);
+  box-shadow: 0.1vw 0.1vw 2vw 0.3vw rgb(40, 40, 177);
+  border-radius: 2vw;
+}
