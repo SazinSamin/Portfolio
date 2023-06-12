@@ -17,10 +17,14 @@
 .Navbar li{
   padding-left: 1vw;
   text-shadow: 0.1vw 0.1vw 0.9vw blue;
+  color: yellow;
+  text-shadow: 0.1vw 0.1vw 0.9vw yellow;
+
 }
 
 .Navbar li:hover{
   color: yellow;
+  text-shadow: 0.1vw 0.1vw 0.9vw yellow;
 }
 
 

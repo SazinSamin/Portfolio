@@ -5,10 +5,9 @@ import Intro from "../Intro/Intro";
 import NavBar from "../Navbar/Navbar";
 import Skill from "../Skills/Skills";
 import Tools from "../Tools/Tools";
-import style from "./homePage.module.css"
+import style from "./homePage.module.css";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
-
 
 const HomePage = () => {
   return (

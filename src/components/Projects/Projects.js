@@ -7,16 +7,18 @@ import ProjectCard6 from "./Cards/ProjectCard6";
 
 const Projects = () => {
   return (
-    <div className={style.Project}>
-      <h1>Projects</h1>
-      <div className={style.Projects}>
-        <ProjectCard2 />
-        <ProjectCard3 />
-        <ProjectCard4 />
-        <ProjectCard5 />
-        <ProjectCard6 />
+    <section id="Projects">
+      <div className={style.Project}>
+        <h1>Projects</h1>
+        <div className={style.Projects}>
+          <ProjectCard2 />
+          <ProjectCard3 />
+          <ProjectCard4 />
+          <ProjectCard5 />
+          <ProjectCard6 />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

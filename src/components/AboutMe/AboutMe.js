@@ -4,12 +4,14 @@ import style from "./aboutme.module.css";
 
 const AboutMe = () => {
   return (
-    <div className={style.AboutMe}>
-      <p>
-        <h1 className={style.AboutMeText}>About Me</h1>
-        <AboutMeAnimation />
-      </p>
-    </div>
+    <section id="AboutMe">
+      <div className={style.AboutMe}>
+        <p>
+          <h1 className={style.AboutMeText}>About Me</h1>
+          <AboutMeAnimation />
+        </p>
+      </div>
+    </section>
   );
 };
 
