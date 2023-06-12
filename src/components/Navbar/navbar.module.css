@@ -1,4 +1,4 @@
-.Navbar {
+.Navbar, .NavbarScrolled{
   background-color: rgba(16, 8, 71, 0.2);
   display: flex;
   flex-direction: row;
@@ -12,19 +12,34 @@
   padding-right: 5vw;
   position: fixed;
   width: 94%;
+  
+
+}
+
+.NavbarScrolled {
+  background-color: black;
+
 }
 
 .Navbar li{
-  padding-left: 1vw;
-  text-shadow: 0.1vw 0.1vw 0.9vw blue;
-  color: yellow;
-  text-shadow: 0.1vw 0.1vw 0.9vw yellow;
+    padding-left: 1vw;
+    color: yellow;
+    text-shadow: 0.1vw 0.1vw 0.9vw yellow;
 
 }
 
-.Navbar li:hover{
-  color: yellow;
-  text-shadow: 0.1vw 0.1vw 0.9vw yellow;
+.NavbarScrolled li{
+  padding-left: 1vw;
+    color: yellow;
+    text-shadow: 0.1vw 0.1vw 0.9vw yellow;
+}
+
+
+.Navbar , .NavbarScrolled li:hover{
+  color: blue;
+  text-shadow: 0.1vw 0.1vw 0.9vw blue;
+  cursor: pointer;
+
 }
 
 

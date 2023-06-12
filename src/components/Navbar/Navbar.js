@@ -1,7 +1,28 @@
+import { useState } from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import style from "./navbar.module.css";
+import { useEffect } from "react";
 
 const NavBar = () => {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if(window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [])
+
+
+
+
   const scrollIntoSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if(sectionId == "Projects") {
@@ -12,7 +33,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className={style.Navbar}>
+    <div className={!isScrolled ? style.Navbar : style.NavbarScrolled}>
       <SearchBar />
       <li id="AboutMeNavElement"
         onClick={() => {
