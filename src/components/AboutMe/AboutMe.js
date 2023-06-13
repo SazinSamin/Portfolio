@@ -1,4 +1,3 @@
-import { ABOUT_ME } from "../../constants/IntroConst";
 import AboutMeAnimation from "../AnimatedText/AboutMeAnimationText";
 import style from "./aboutme.module.css";
 

@@ -5,7 +5,41 @@
   margin-right: 5vw;
   padding: 2vw;
   font-size: 1.7vw;
+  animation: colorChange 5s infinite alternate;
   box-shadow: 1vw 1vw 10vw 2vw blue;
+}
+
+
+
+@keyframes colorChange {
+  0% {
+      box-shadow: 1vw 1vw 10vw 2vw blue;
+
+  }
+  25% {
+    box-shadow: 2vw 2vw 10vw 5vw blue;
+
+  }
+  50% {
+    box-shadow: 1vw 1vw 10vw 2vw blue;
+
+
+  }
+  75% {
+    box-shadow: 2vw 2vw 10vw 5vw blue;
+
+
+  }
+  100% {
+    box-shadow: 2vw 2vw 10vw 5vw blue;
+
+  }
+}
+
+
+.AboutMeText{
+  justify-content: center;
+  color: blue;
 }
 
 

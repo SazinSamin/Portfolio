@@ -12,7 +12,8 @@
   padding-right: 5vw;
   position: fixed;
   width: 94%;
-  
+  z-index: 1000;
+
 
 }
 
@@ -32,10 +33,11 @@
   padding-left: 1vw;
     color: yellow;
     text-shadow: 0.1vw 0.1vw 0.9vw yellow;
+    
 }
 
 
-.Navbar , .NavbarScrolled li:hover{
+.Navbar , li:hover{
   color: blue;
   text-shadow: 0.1vw 0.1vw 0.9vw blue;
   cursor: pointer;

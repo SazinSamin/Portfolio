@@ -8,8 +8,12 @@ import CssIcon from "../../SVG/css-3.svg";
 import CppIcon from "../../SVG/c-1.svg";
 import CIcon from "../../SVG/c.svg";
 import JavascriptIcon from "../../SVG/logo-javascript.svg";
+import 'aos/dist/aos.css';
+
 
 import Style from "./skills.module.css";
+import { useEffect } from "react";
+import Aos from "aos";
 
 const Icons = {
   Javascript: JavascriptIcon,
@@ -25,6 +29,7 @@ const Icons = {
 };
 
 const Skill = () => {
+
   return (
     <section id="Skills">
       <div>
