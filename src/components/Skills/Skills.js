@@ -38,7 +38,7 @@ const Skill = () => {
           {Object.entries(Icons).map(([key, value], idx) => {
             return (
               <div key={idx}>
-                <img src={value}></img>
+                <img alt="img" src={value}></img>
                 <p>{key}</p>
               </div>
             );

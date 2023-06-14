@@ -20,12 +20,16 @@ const Background = () => {
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      options={
-        {
+      options= {optionsParticle}
+    />
+  );
+};
+
+const optionsParticle = {
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#17163e"
+      "value": "#000"
     },
     "image": "",
     "position": "",
@@ -66,8 +70,8 @@ const Background = () => {
         "type": "circle"
       },
       "onHover": {
-        "enable": true,
-        "mode": "light",
+        "enable": false,
+        "mode": [],
         "parallax": {
           "enable": false,
           "force": 2,
@@ -155,17 +159,17 @@ const Background = () => {
         "area": {
           "gradient": {
             "start": {
-              "value": "3b5e98"
+              "value": "#ffffff"
             },
             "stop": {
-              "value": "#17163e"
+              "value": "#000000"
             }
           },
           "radius": 1000
         },
         "shadow": {
           "color": {
-            "value": "#17163e"
+            "value": "#000000"
           },
           "length": 2000
         }
@@ -219,13 +223,13 @@ const Background = () => {
       }
     },
     "color": {
-      "value": "#ff0000",
+      "value": "#FF0000",
       "animation": {
         "h": {
           "count": 0,
           "enable": true,
           "offset": 0,
-          "speed": 20,
+          "speed": 10,
           "delay": 0,
           "decay": 0,
           "sync": true
@@ -258,10 +262,10 @@ const Background = () => {
       },
       "attract": {
         "distance": 200,
-        "enable": false,
+        "enable": true,
         "rotate": {
-          "x": 3000,
-          "y": 3000
+          "x": 2000,
+          "y": 2000
         }
       },
       "center": {
@@ -282,7 +286,7 @@ const Background = () => {
         "maxSpeed": 50
       },
       "path": {
-        "clamp": true,
+        "clamp": false,
         "delay": {
           "random": {
             "enable": false,
@@ -290,28 +294,37 @@ const Background = () => {
           },
           "value": 0
         },
-        "enable": false,
-        "options": {}
+        "enable": true,
+        "options": {
+          "sides": 6,
+          "turnSteps": 30,
+          "angle": 30
+        },
+        "generator": "polygonPathGenerator"
       },
       "outModes": {
-        "default": "out",
-        "bottom": "out",
-        "left": "out",
-        "right": "out",
-        "top": "out"
+        "default": "destroy",
+        "bottom": "destroy",
+        "left": "destroy",
+        "right": "destroy",
+        "top": "destroy"
       },
       "random": false,
       "size": false,
-      "speed": 6,
+      "speed": 3,
       "spin": {
         "acceleration": 0,
         "enable": false
       },
       "straight": false,
       "trail": {
-        "enable": false,
-        "length": 10,
-        "fill": {}
+        "enable": true,
+        "length": 20,
+        "fill": {
+          "color": {
+            "value": "#000"
+          }
+        }
       },
       "vibrate": false,
       "warp": false
@@ -323,7 +336,7 @@ const Background = () => {
         "height": 1080
       },
       "limit": 0,
-      "value": 30
+      "value": 0
     },
     "opacity": {
       "random": {
@@ -359,20 +372,14 @@ const Background = () => {
       "close": true,
       "fill": true,
       "options": {},
-      "type": [
-        "circle",
-        "square"
-      ]
+      "type": "circle"
     },
     "size": {
       "random": {
-        "enable": true,
-        "minimumValue": 15
+        "enable": false,
+        "minimumValue": 1
       },
-      "value": {
-        "min": 15,
-        "max": 30
-      },
+      "value": 2,
       "animation": {
         "count": 0,
         "enable": false,
@@ -424,8 +431,8 @@ const Background = () => {
       },
       "value": 0,
       "animation": {
-        "enable": true,
-        "speed": 5,
+        "enable": false,
+        "speed": 0,
         "decay": 0,
         "sync": false
       },
@@ -544,7 +551,7 @@ const Background = () => {
         "enable": false
       },
       "triangles": {
-        "enable": true,
+        "enable": false,
         "frequency": 1
       },
       "width": 1,
@@ -570,11 +577,31 @@ const Background = () => {
   "style": {},
   "themes": [],
   "zLayers": 100,
-  "emitters": []
+  "emitters": {
+    "autoPlay": true,
+    "fill": true,
+    "life": {
+      "wait": false
+    },
+    "rate": {
+      "quantity": 1,
+      "delay": 0.25
+    },
+    "shape": "square",
+    "startCount": 0,
+    "size": {
+      "mode": "percent",
+      "height": 0,
+      "width": 0
+    },
+    "direction": "none",
+    "particles": {},
+    "position": {
+      "x": 50,
+      "y": 50
+    }
+  }
 }
-      }
-    />
-  );
-};
+
 
 export default Background;

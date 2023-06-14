@@ -20,6 +20,8 @@
 
     "get-all-files": "^4.1.0",
 
+    "inquirer": "^9.2.7",
+
     "list-react-files": "^0.2.0",
 
     "react": "^18.2.0",
@@ -91,6 +93,14 @@
       "last 1 safari version"
 
     ]
+
+  },
+
+  "devDependencies": {
+
+    "eslint": "^8.42.0",
+
+    "eslint-plugin-prettier": "^4.2.1"
 
   }
 
